@@ -1,9 +1,9 @@
-public class SeasonalEmployee {
+public class TemporaryEmployee {
     private String name;
     private String surname;
     private double salary;
     private String work;
-    private String season;
+    private String workingHours;
 
     public String getName() {
         return name;
@@ -37,11 +37,11 @@ public class SeasonalEmployee {
         this.work = work;
     }
 
-    public String getSeason() {
-        return season;
+    public String getWorkingHours() {
+        return workingHours;
     }
 
-    public void setSeason(String season) {
-        this.season = season;
+    public void setWorkingHours(String workingHours) {
+        this.workingHours = workingHours;
     }
 }
