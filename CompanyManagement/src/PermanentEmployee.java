@@ -1,42 +1,6 @@
-public class PermanentEmployee {
-    private String name;
-    private String surname;
-    private double salary;
-    private String work;
+public class PermanentEmployee extends Employee {
+
     private String room;
-
-    public String getName() {
-        return name;
-    }
-
-    public void setName(String name) {
-        this.name = name;
-    }
-
-    public String getSurname() {
-        return surname;
-    }
-
-    public void setSurname(String surname) {
-        this.surname = surname;
-    }
-
-    public double getSalary() {
-        return salary;
-    }
-
-    public void setSalary(Double salary) {
-        this.salary = salary;
-    }
-
-    public String getWork() {
-        return work;
-    }
-
-    public void setWork(String work) {
-        this.work = work;
-    }
-
     public String getRoom() {
         return room;
     }
@@ -44,10 +8,8 @@ public class PermanentEmployee {
     public void setRoom(String room) {
         this.room = room;
     }
-
-    public void setSalary(double salary) {
-        this.salary = salary;
-    }
-
-
 }
+
+
+
+
