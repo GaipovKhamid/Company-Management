@@ -4,6 +4,14 @@ public class Employee {
     private double salary;
     private String work;
 
+
+    public Employee(String name, String surname, double salary, String work) {
+        this.name = name;
+        this.surname = surname;
+        this.salary = salary;
+        this.work = work;
+    }
+
     public String getName() {
         return name;
     }
