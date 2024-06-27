@@ -8,12 +8,7 @@ public class CompanuManagement {
     private int temporaryIndex = 0;
 
     public PermanentEmployee addPermanentEmployee(String name, String surname, double salary, String work, String room) {
-        PermanentEmployee employee = new PermanentEmployee();
-        employee.setName(name);
-        employee.setSurname(surname);
-        employee.setRoom(room);
-        employee.setSalary(salary);
-        employee.setWork(work);
+        PermanentEmployee employee = new PermanentEmployee(name,surname,salary,work,room);
 
         permanentEmployeeArray[permanentindex++] = employee;
 
@@ -21,25 +16,14 @@ public class CompanuManagement {
     }
 
     public SeasonalEmployee addSeasonalEmployee(String name, String surname, double salary, String work, String season) {
-        SeasonalEmployee employee = new SeasonalEmployee();
-        employee.setName(name);
-        employee.setSurname(surname);
-        employee.setSalary(salary);
-        employee.setWork(work);
-        employee.setSeason(season);
-
+        SeasonalEmployee employee = new SeasonalEmployee(name,surname,salary,work,season);
         seasonalEmployeeArr[seasonalIndex++] = employee;
         return employee;
 
     }
 
     public TemporaryEmployee addTemporaryEmployee(String name, String surname, double salary, String work, String workHour) {
-        TemporaryEmployee employee = new TemporaryEmployee();
-        employee.setName(name);
-        employee.setSurname(surname);
-        employee.setWorkingHours(workHour);
-        employee.setSalary(salary);
-        employee.setWork(work);
+        TemporaryEmployee employee = new TemporaryEmployee(name, surname, salary, work,workHour);
 
         temporaryEmployeeArr[temporaryIndex++] = employee;
 
