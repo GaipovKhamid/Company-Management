@@ -10,6 +10,14 @@ public class Employee {
         this.surname = surname;
         this.salary = salary;
         this.work = work;
+
+    }
+
+    public String getDetail() {
+        return "name='" + name + '\'' +
+                ", surname='" + surname + '\'' +
+                ", salary=" + salary +
+                ", work='" + work + '\'';
     }
 
     public String getName() {
@@ -43,4 +51,5 @@ public class Employee {
     public void setWork(String work) {
         this.work = work;
     }
+
 }

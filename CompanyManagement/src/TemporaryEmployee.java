@@ -13,4 +13,12 @@ public class TemporaryEmployee extends Employee {
     public void setWorkingHours(String workingHours) {
         this.workingHours = workingHours;
     }
+
+    @Override
+    public String toString() {
+        return "TemporaryEmployee{" +
+                super.toString()+
+                "workingHours='" + workingHours + '\'' +
+                '}';
+    }
 }

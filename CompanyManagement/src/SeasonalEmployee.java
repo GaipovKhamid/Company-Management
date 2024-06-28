@@ -1,4 +1,4 @@
-public class SeasonalEmployee extends Employee{
+public class SeasonalEmployee extends Employee {
     private String season;
 
     public SeasonalEmployee(String name, String surname, double salary, String work, String season) {
@@ -12,5 +12,13 @@ public class SeasonalEmployee extends Employee{
 
     public void setSeason(String season) {
         this.season = season;
+    }
+
+    @Override
+    public String toString() {
+        return "SeasonalEmployee{" +
+                super.toString() +
+                "season='" + season + '\'' +
+                '}';
     }
 }

@@ -8,7 +8,7 @@ public class CompanuManagement {
     private int temporaryIndex = 0;
 
     public PermanentEmployee addPermanentEmployee(String name, String surname, double salary, String work, String room) {
-        PermanentEmployee employee = new PermanentEmployee(name,surname,salary,work,room);
+        PermanentEmployee employee = new PermanentEmployee(name, surname, salary, work, room);
 
         permanentEmployeeArray[permanentindex++] = employee;
 
@@ -16,18 +16,36 @@ public class CompanuManagement {
     }
 
     public SeasonalEmployee addSeasonalEmployee(String name, String surname, double salary, String work, String season) {
-        SeasonalEmployee employee = new SeasonalEmployee(name,surname,salary,work,season);
+        SeasonalEmployee employee = new SeasonalEmployee(name, surname, salary, work, season);
         seasonalEmployeeArr[seasonalIndex++] = employee;
         return employee;
 
     }
 
     public TemporaryEmployee addTemporaryEmployee(String name, String surname, double salary, String work, String workHour) {
-        TemporaryEmployee employee = new TemporaryEmployee(name, surname, salary, work,workHour);
+        TemporaryEmployee employee = new TemporaryEmployee(name, surname, salary, work, workHour);
 
         temporaryEmployeeArr[temporaryIndex++] = employee;
 
         return employee;
+    }
+
+    public void printAllEmployeeDetail() {
+        for (PermanentEmployee employee : permanentEmployeeArray) {
+            if (employee != null) {
+                System.out.println(employee.getDetail());
+            }
+        }
+        for (SeasonalEmployee employee : seasonalEmployeeArr) {
+            if (employee != null) {
+                System.out.println(employee.getDetail());
+            }
+        }
+        for (TemporaryEmployee employee : temporaryEmployeeArr) {
+            if (employee != null) {
+                System.out.println(employee.getDetail());
+            }
+        }
     }
 
 }
