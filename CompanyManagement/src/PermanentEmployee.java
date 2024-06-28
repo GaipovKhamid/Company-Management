@@ -15,14 +15,6 @@ public class PermanentEmployee extends Employee {
         this.room = room;
     }
 
-    @Override
-    public String toString() {
-        return "PermanentEmployee{" +
-                super.toString()+
-
-                "room='" + room + '\'' +
-                '}';
-    }
 }
 
 
