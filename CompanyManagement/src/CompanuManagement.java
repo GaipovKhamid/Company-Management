@@ -37,14 +37,11 @@ public class CompanuManagement {
         SeasonalEmployee seasonalEmployee = new SeasonalEmployee();
         TemporaryEmployee temporaryEmployee = new TemporaryEmployee();
 
-        Employee perEmployee  = new PermanentEmployee();
+        Employee perEmployees = new PermanentEmployee("Khamid", "Gaipov", 1200d, "IT", "3");
+        Employee seasonEmployees = new SeasonalEmployee("Khamid", "Gaipov", 1200d, "Gardener", "Spring");
+        Employee tempEmployee = new TemporaryEmployee("Khamid", "Gaipov", 1200d, "don`t know", "3");
 
-        Employee perEmployee = new PermanentEmployee();
-        Employee seasonalEmployee = new SeasonalEmployee();
-        Employee tempEmployee = new TemporaryEmployee();
-
-        System.out.println(perEmployee.getDetail());
-
+        System.out.println(perEmployees);
 
 
         for (PermanentEmployee employee : permanentEmployeeArray) {
