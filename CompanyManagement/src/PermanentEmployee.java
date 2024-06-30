@@ -9,6 +9,7 @@ public class PermanentEmployee extends Employee {
     }
 
     private String room;
+
     public String getRoom() {
         return room;
     }

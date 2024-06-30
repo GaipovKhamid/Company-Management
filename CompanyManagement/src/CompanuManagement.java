@@ -32,11 +32,19 @@ public class CompanuManagement {
 
     public void printAllEmployeeDetail() {
 
+
         PermanentEmployee permanentEmployee = new PermanentEmployee();
         SeasonalEmployee seasonalEmployee = new SeasonalEmployee();
         TemporaryEmployee temporaryEmployee = new TemporaryEmployee();
 
         Employee perEmployee  = new PermanentEmployee();
+
+        Employee perEmployee = new PermanentEmployee();
+        Employee seasonalEmployee = new SeasonalEmployee();
+        Employee tempEmployee = new TemporaryEmployee();
+
+        System.out.println(perEmployee.getDetail());
+
 
 
         for (PermanentEmployee employee : permanentEmployeeArray) {
