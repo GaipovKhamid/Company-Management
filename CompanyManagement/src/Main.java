@@ -7,6 +7,7 @@ public class Main {
         companuManagement.addSeasonalEmployee("Khamid", "Gaipov", 1200d, "Gardener","Spring");
 
         companuManagement.addTemporaryEmployee("Khamid", "Gaipov", 1200d, "don`t know","3");
+        companuManagement.addTemporaryEmployee("Khamid", "Gaipov", 1200d, "don`t know","3");
 
         companuManagement.printAllEmployeeDetail();
     }
