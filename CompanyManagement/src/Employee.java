@@ -22,6 +22,18 @@ public class Employee {
                 ", work='" + work + '\'';
     }
 
+    public String getEmployeeType() {
+        return "Employee";
+    }
+
+    public Double getOneTimeBonus() {
+        return 0.0;
+    }
+
+    public Double getPensionTax() {
+        return 0.0;
+    }
+
     public String getName() {
         return name;
     }

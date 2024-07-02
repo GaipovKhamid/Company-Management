@@ -17,4 +17,8 @@ public class TemporaryEmployee extends Employee {
         this.workingHours = workingHours;
     }
 
+    @Override
+    public String getEmployeeType() {
+        return "Temporary";
+    }
 }

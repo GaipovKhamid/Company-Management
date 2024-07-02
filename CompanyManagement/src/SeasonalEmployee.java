@@ -17,5 +17,18 @@ public class SeasonalEmployee extends Employee {
         this.season = season;
     }
 
+    @Override
+    public String getEmployeeType() {
+        return "Seasonal";
+    }
 
+    @Override
+    public Double getOneTimeBonus() {
+        return getSalary() * 0.3;
+    }
+
+    @Override
+    public Double getPensionTax() {
+        return getSalary() / 0.65;
+    }
 }

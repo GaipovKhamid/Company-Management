@@ -18,6 +18,20 @@ public class PermanentEmployee extends Employee {
         this.room = room;
     }
 
+    @Override
+    public String getEmployeeType() {
+        return "Permanent";
+    }
+
+    @Override
+    public Double getOneTimeBonus() { //50%
+        return getSalary()* 0.5;
+    }
+
+    @Override
+    public Double getPensionTax() {
+        return getSalary() / 0.75;
+    }
 }
 
 

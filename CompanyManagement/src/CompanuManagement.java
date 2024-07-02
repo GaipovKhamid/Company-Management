@@ -49,4 +49,28 @@ public class CompanuManagement {
         }
     }
 
+    public void printAllEmployeeType() {
+        for (Employee employee : employeeArray) {
+            if (employee != null) {
+                System.out.println(employee.getName() + " " + employee.getSurname() + " " + employee.getEmployeeType());
+            }
+        }
+    }
+
+    public void printAllEmployeeBonus() {
+        for (Employee employee : employeeArray) {
+            if (employee != null) {
+                System.out.println(employee.getName() + " " + employee.getSurname() + " " + employee.getOneTimeBonus());
+            }
+        }
+    }
+
+    public void showAllPensionTax() {
+        for (Employee employee : employeeArray) {
+            if (employee != null) {
+                System.out.println(employee.getName() + " " + employee.getSurname() + " " + employee.getPensionTax());
+            }
+        }
+    }
+
 }
