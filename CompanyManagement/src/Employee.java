@@ -38,6 +38,10 @@ public class Employee {
         return 0.0;
     }
 
+    public Double calculateSalaryAfterAllTaxes(){
+        return 0.0;
+    }
+
     public String getName() {
         return name;
     }
