@@ -32,6 +32,11 @@ public class PermanentEmployee extends Employee {
     public Double getPensionTax() {
         return getSalary() / 0.75;
     }
+
+    @Override
+    public Double calculateInsuranceTax() {
+        return getSalary() / 0.1;
+    }
 }
 
 

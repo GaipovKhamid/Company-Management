@@ -12,6 +12,7 @@ public class Main {
 //        companuManagement.printAllEmployeeDetail();
 //        companuManagement.printAllEmployeeType();
 //        companuManagement.printAllEmployeeBonus();
-        companuManagement.showAllPensionTax();
+//        companuManagement.showAllPensionTax();
+        companuManagement.showInsuranceTax();
     }
 }

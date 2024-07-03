@@ -34,6 +34,10 @@ public class Employee {
         return 0.0;
     }
 
+    public Double calculateInsuranceTax(){
+        return 0.0;
+    }
+
     public String getName() {
         return name;
     }

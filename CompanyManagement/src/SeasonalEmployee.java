@@ -31,4 +31,9 @@ public class SeasonalEmployee extends Employee {
     public Double getPensionTax() {
         return getSalary() / 0.65;
     }
+
+    @Override
+    public Double calculateInsuranceTax() {
+        return getSalary() / 0.05;
+    }
 }

@@ -73,4 +73,12 @@ public class CompanuManagement {
         }
     }
 
+    public void showInsuranceTax() {
+        for (Employee employee : employeeArray) {
+            if (employee != null) {
+                System.out.println(employee.getName() + " " + employee.getSurname() + " " + employee.calculateInsuranceTax());
+            }
+        }
+    }
+
 }
