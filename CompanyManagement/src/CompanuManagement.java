@@ -81,4 +81,12 @@ public class CompanuManagement {
         }
     }
 
+    public void showAllInsuranceTax() {
+        for (Employee employee : employeeArray) {
+            if (employee != null) {
+                System.out.println(employee.getName() + " " + employee.getSurname() + " " + employee.calculateSalaryAfterAllTaxes());
+            }
+        }
+    }
+
 }

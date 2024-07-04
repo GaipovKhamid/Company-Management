@@ -9,6 +9,6 @@ public class Main {
 //        companuManagement.printAllEmployeeBonus();
 //        companuManagement.showAllPensionTax();
 //        companuManagement.showInsuranceTax();
-
+companuManagement.showAllInsuranceTax();
     }
 }
