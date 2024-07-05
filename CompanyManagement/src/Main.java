@@ -4,11 +4,14 @@ public class Main {
         companuManagement.addPermanentEmployee("Khamid", "Gaipov", 1200d, "IT", "3");
 
         companuManagement.addSeasonalEmployee("Khamid", "Gaipov", 1200d, "Gardener", "Spring");
+
+        companuManagement.addPartnerEmployee("Jumong", "Lattayev", 100d, "Chang artadi", "JumongDev");
+
 //        companuManagement.printAllEmployeeDetail();
 //        companuManagement.printAllEmployeeType();
 //        companuManagement.printAllEmployeeBonus();
 //        companuManagement.showAllPensionTax();
 //        companuManagement.showInsuranceTax();
-companuManagement.showAllInsuranceTax();
+        companuManagement.showAllInsuranceTax();
     }
 }

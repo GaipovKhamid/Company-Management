@@ -24,17 +24,17 @@ public class SeasonalEmployee extends Employee {
 
     @Override
     public Double getOneTimeBonus() {
-        return getSalary() + 0.3;
+        return getSalary() * 0.3;
     }
 
     @Override
     public Double getPensionTax() {
-        return getSalary() - 0.65;
+        return getSalary() * 0.65;
     }
 
     @Override
     public Double calculateInsuranceTax() {
-        return getSalary() - 0.5;
+        return getSalary() * 0.5;
     }
 
     @Override

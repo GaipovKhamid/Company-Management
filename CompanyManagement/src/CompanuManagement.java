@@ -29,6 +29,12 @@ public class CompanuManagement {
         return employee;
     }
 
+    public PartnerEmployee addPartnerEmployee(String name, String surname, double salary, String work, String companyName) {
+        PartnerEmployee employee = new PartnerEmployee(name, surname, salary, work, companyName);
+        employeeArray[arrayIndex++] = employee;
+        return employee;
+    }
+
     public void printAllEmployeeDetail() {
 //        PermanentEmployee permanentEmployee = new PermanentEmployee();
 //        SeasonalEmployee seasonalEmployee = new SeasonalEmployee();
@@ -88,5 +94,4 @@ public class CompanuManagement {
             }
         }
     }
-
 }
