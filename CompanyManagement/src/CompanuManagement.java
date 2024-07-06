@@ -35,6 +35,12 @@ public class CompanuManagement {
         return employee;
     }
 
+    public EarEmployee addEarEmployee(String name, String surname, double salary, String work) {
+        EarEmployee employee = new EarEmployee(name, surname, salary, work);
+        employeeArray[arrayIndex++] = employee;
+        return employee;
+    }
+
     public void printAllEmployeeDetail() {
 //        PermanentEmployee permanentEmployee = new PermanentEmployee();
 //        SeasonalEmployee seasonalEmployee = new SeasonalEmployee();
@@ -94,4 +100,5 @@ public class CompanuManagement {
             }
         }
     }
+
 }

@@ -1,4 +1,4 @@
-public class Employee {
+public abstract class Employee {
     private String name;
     private String surname;
     private double salary;
@@ -22,23 +22,15 @@ public class Employee {
                 ", work='" + work + '\'';
     }
 
-    public String getEmployeeType() {
-        return "Employee";
-    }
+    public abstract String getEmployeeType();
 
-    public Double getOneTimeBonus() {
-        return 0.0;
-    }
+    public abstract Double getOneTimeBonus();
 
-    public Double getPensionTax() {
-        return 0.0;
-    }
+    public abstract Double getPensionTax();
 
-    public Double calculateInsuranceTax(){
-        return 0.0;
-    }
+    public abstract Double calculateInsuranceTax();
 
-    public Double calculateSalaryAfterAllTaxes(){
+    public Double calculateSalaryAfterAllTaxes() {
         return 0.0;
     }
 

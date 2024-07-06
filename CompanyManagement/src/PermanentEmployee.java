@@ -30,7 +30,7 @@ public class PermanentEmployee extends Employee {
 
     @Override
     public Double getPensionTax() {
-        return getSalary() * 0.75;
+        return getSalary() * 0.075;
     }
 
     @Override
@@ -38,7 +38,6 @@ public class PermanentEmployee extends Employee {
         return getSalary() * 0.01;
     }
 
-    @Override
     public Double calculateSalaryAfterAllTaxes() {
         return getSalary() + getOneTimeBonus() - getPensionTax() - calculateInsuranceTax();
     }

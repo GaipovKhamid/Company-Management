@@ -7,6 +7,8 @@ public class Main {
 
         companuManagement.addPartnerEmployee("Jumong", "Lattayev", 100d, "Chang artadi", "JumongDev");
 
+        companuManagement.addEarEmployee("Ali", "Valiyev",120d, "EAR");
+
 //        companuManagement.printAllEmployeeDetail();
 //        companuManagement.printAllEmployeeType();
 //        companuManagement.printAllEmployeeBonus();

@@ -41,5 +41,4 @@ public class SeasonalEmployee extends Employee {
     public Double calculateSalaryAfterAllTaxes() {
         return getSalary() + getOneTimeBonus() - getPensionTax() - calculateInsuranceTax();
     }
-
 }
